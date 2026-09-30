@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js{{introClass}}">
+<html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,28 +25,14 @@
   <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Merriweather:wght@400;700;900&display=swap">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <script>
-    (function (d) {
-      d.classList.remove('no-js');
-      var play = true;
-      try {
-        var nav = performance.getEntriesByType && performance.getEntriesByType('navigation')[0];
-        var reload = nav ? nav.type === 'reload' : (performance.navigation && performance.navigation.type === 1);
-        var seen = window.sessionStorage.getItem('amg-intro') === '1';
-        play = !!reload || !seen;
-      } catch (e) { play = true; }
-      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) { play = false; }
-      if (!play) { d.classList.remove('intro-pending'); }
-    })(document.documentElement);
-  </script>
+  <script>document.documentElement.classList.remove('no-js');</script>
   {{jsonld}}
 </head>
 <body class="{{bodyClass}}">
   {{logoSymbol}}
   <a class="skip-link" href="#main">Skip to main content</a>
-  {{intro}}
   {{header}}
   <main id="main" tabindex="-1">
 {{body}}

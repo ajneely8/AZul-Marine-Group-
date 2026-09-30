@@ -8,10 +8,9 @@ No framework, no build dependencies on the server. Upload the folder and it work
 
 | Path | Purpose |
 | --- | --- |
-| `index.html`, `about.html`, `programs.html`, `media.html`, `get-involved.html`, `news.html`, `contact.html`, `404.html` | The finished, deployable pages |
+| `index.html`, `about.html`, `programs.html`, `media.html`, `news.html`, `get-involved.html`, `donate.html`, `contact.html`, `404.html` | The finished, deployable pages |
 | `assets/css/styles.css` | The single stylesheet (public-safety design system) |
-| `assets/js/main.js` | Logo entrance, hero background video, scroll reveal, sticky header, mobile navigation, forms |
-| `assets/video/` | Drop `hero.mp4` (and optionally `hero.webm`) here for the home page background video; see the README inside |
+| `assets/js/main.js` | Slideshow, scroll reveal, sticky header, mobile navigation, forms |
 | `assets/js/media-data.js` | The video and photo library (edit this to add media) |
 | `assets/js/media.js` | Renders the media gallery and lightbox |
 | `assets/brand/` | Vector logo (`logo.svg`, `logo-white.svg`), transparent PNGs, favicons |
@@ -60,9 +59,9 @@ The forms on `contact.html` and `get-involved.html` work in two modes:
 
 `assets/brand/logo.svg` was traced from the logo the organization published on Facebook (720 px). It is the same mark, not a redesign. The header uses it in navy, the footer and intro in white. Do not redraw or recolor the identity.
 
-## Logo entrance
+## Home page layout
 
-On the first visit in a browser session, the home page shows a short (about two seconds) entrance: the logo draws in as a line, fills, the name appears, then the overlay fades and the logo settles into the header. It is skipped for repeat visits in the same session, for anyone with "reduce motion" set on their device, and on a click or key press.
+The home page follows the structure of FEMA.gov and fire.ca.gov: a title band, a photo slideshow with a solid headline card, a row of "What We Do" tiles, a Training band, a Latest News three-card row, a Who We Are band, and a Get Involved band with a large Support Our Mission button. The slideshow lives in `src/pages/index.html`; add a slide by copying one `.slide` block and one dot.
 
 ## What still needs real information before launch
 
@@ -70,11 +69,12 @@ Everything below is shown as a clearly labeled placeholder in the site. Nothing 
 
 | Item | Where | What to do |
 | --- | --- | --- |
-| Leadership (board, officers) | `about.html` | Provide names, titles, short bios |
+| Leadership (board, officers) | `about.html` | Replace the six "To be named" circles with names, titles, and photos |
 | Partner agencies and organizations | `get-involved.html` | Provide the list the organization is authorized to publish |
-| Online donation button | `get-involved.html` | Set up a processor (PayPal Giving Fund, Zeffy, Givebutter, etc.) and add the link |
+| Online donation link | `donate.html` | Set up a processor (PayPal, Zeffy, Givebutter, etc.) and paste the link into the Donate Now button |
 | Events | `get-involved.html`, `news.html` | Add as scheduled |
-| Videos | `assets/js/media-data.js` | Provide files or YouTube/Vimeo links |
+| Videos | `assets/js/media-data.js` | Provide files or YouTube/Vimeo links (the organization is sending these) |
+| News stories | `news.html`, `index.html` | Stories are being provided; replace the two placeholder cards |
 | Program photos for Stewardship and Advisory | `index.html`, `programs.html` | Provide photos of water testing, levee inspection, vessel support |
 | Office hours | `contact.html` | Confirm and add |
 | Web3Forms access key | forms | Create and paste in |

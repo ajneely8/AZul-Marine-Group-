@@ -5,10 +5,10 @@
           {{logoFooter}}
           <div>
             <p class="footer-brand__name">Azul Marine Group</p>
-            <p class="footer-brand__legal">{{site.legalName}}</p>
+            <p class="footer-brand__legal">{{site.legalName}}<br>A California nonprofit public benefit corporation</p>
           </div>
         </div>
-        <p class="site-footer__mission">A community of marine professionals supporting local, regional, state, and federal agencies during maritime emergencies, delivering marine safety training, and caring for the waterways of the Sacramento, San Joaquin, and Mokelumne Rivers.</p>
+        <p class="site-footer__mission">Marine professionals supporting local, regional, state, and federal agencies during maritime emergencies, delivering marine training, and caring for the Sacramento, San Joaquin, and Mokelumne Rivers.</p>
         <a class="site-footer__social" href="{{site.facebook}}" rel="noopener" target="_blank">
           <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.6 1.6-1.6h1.7V4.4c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.2v2.3H7.4V14h2.8v8h3.3Z"/></svg>
           Follow us on Facebook
@@ -17,12 +17,13 @@
       <nav class="site-footer__nav" aria-label="Footer">
         <h2 class="site-footer__heading">Navigate</h2>
         <ul>
-          <li><a href="about.html">About the Organization</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="about.html#mission">Our Mission</a></li>
           <li><a href="programs.html">Programs and Services</a></li>
-          <li><a href="media.html">Media Gallery</a></li>
-          <li><a href="news.html">News and Updates</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="news.html">News</a></li>
           <li><a href="get-involved.html">Get Involved</a></li>
+          <li><a href="donate.html">Support Our Mission</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -32,26 +33,20 @@
           <p>{{site.address1}}<br>{{site.address2}}</p>
           <p><a href="{{site.phoneHref}}">{{site.phone}}</a><br><a href="mailto:{{site.email}}">{{site.email}}</a></p>
         </address>
-        <h2 class="site-footer__heading">Registered Office</h2>
-        <address>
-          <p>{{site.mailing1}}<br>{{site.mailing2}}</p>
-        </address>
       </div>
-      <div class="site-footer__status">
-        <h2 class="site-footer__heading">Public Registration</h2>
-        <dl class="status-list">
-          <div><dt>IRS status</dt><dd>501(c)(3) public charity</dd></div>
-          <div><dt>EIN</dt><dd>{{site.ein}}</dd></div>
-          <div><dt>California entity</dt><dd>Nonprofit Public Benefit Corporation, No. {{site.caEntity}}</dd></div>
-          <div><dt>Contributions</dt><dd>Tax deductible to the extent allowed by law</dd></div>
-        </dl>
+      <div class="site-footer__contact">
+        <h2 class="site-footer__heading">Principal Office</h2>
+        <address>
+          <p>{{site.legalName}}<br>{{site.mailing1}}<br>{{site.mailing2}}</p>
+        </address>
+        <p class="site-footer__small">For emergencies in progress, call 911.</p>
       </div>
     </div>
     <div class="site-footer__official">
       <div class="container">
         <p>
           <svg class="site-footer__official-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 1 2 3.5v4c0 3.4 2.6 6.1 6 7 3.4-.9 6-3.6 6-7v-4L8 1Zm-1 9.6L4.6 8.2l1-1 1.4 1.4 3.4-3.4 1 1L7 10.6Z"/></svg>
-          <span>Official website of {{site.legalName}}, a California nonprofit public benefit corporation and IRS-recognized 501(c)(3) public charity.</span>
+          <span>Official website of {{site.legalName}}, a California nonprofit public benefit corporation and 501(c)(3) nonprofit organization.</span>
         </p>
       </div>
     </div>
@@ -59,7 +54,6 @@
       <div class="container site-footer__bottom-inner">
         <p>&copy; {{site.year}} {{site.legalName}} All rights reserved.</p>
         <ul>
-          <li><a href="about.html#registration">Registration and Records</a></li>
           <li><a href="contact.html#accessibility">Accessibility</a></li>
           <li><a href="sitemap.xml">Sitemap</a></li>
         </ul>

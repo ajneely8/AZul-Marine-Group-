@@ -46,6 +46,7 @@ const nav = [
   ['programs.html', 'Programs'],
   ['media.html', 'Media'],
   ['news.html', 'News'],
+  ['donate.html', 'Donate'],
   ['contact.html', 'Contact'],
 ];
 
@@ -91,11 +92,8 @@ for (const file of files) {
     meta,
     logoHeader: logoSvg('brand__mark', 'Azul Marine Group'),
     logoFooter: logoSvg('footer-brand__mark', 'Azul Marine Group'),
-    logoIntro: `<svg class="intro__logo" viewBox="0 0 720 722" aria-hidden="true" focusable="false"><use class="intro__path" href="#amg-logo"/></svg>`,
     logoSymbol,
     navItems: navHtml(out),
-    intro: partial('intro.html'),
-    introClass: ' intro-pending',
     bodyClass: meta.bodyClass || '',
     canonical: `${site.url}/${out === 'index.html' ? '' : out}`,
     ogImage: `${site.url}/assets/img/og-image.jpg`,
