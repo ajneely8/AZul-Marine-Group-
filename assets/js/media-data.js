@@ -66,6 +66,36 @@ window.AMG_MEDIA = {
   ],
   photos: [
     {
+      src: "assets/img/seawolf-dock-1200.jpg",
+      webp: "assets/img/seawolf-dock-1200.webp",
+      alt: "The retired City of Oakland fireboat Sea-Wolf, red hull and white wheelhouse, tied up at a dock",
+      caption: "Fireboat Seawolf, acquired by Azul Marine Group for restoration. Photo: Azul Marine Group (Seawolf campaign)."
+    },
+    {
+      src: "assets/img/seawolf-divers-1200.jpg",
+      webp: "assets/img/seawolf-divers-1200.webp",
+      alt: "Two members help a diver gear up on the stern of the fireboat Seawolf",
+      caption: "Dive team working from the stern of Seawolf. Photo: Azul Marine Group (Seawolf campaign)."
+    },
+    {
+      src: "assets/img/seawolf-hull-diver-1200.jpg",
+      webp: "assets/img/seawolf-hull-diver-1200.webp",
+      alt: "A diver in the water alongside the hull of the fireboat Seawolf",
+      caption: "Hull inspection dive alongside Seawolf. Photo: Azul Marine Group (Seawolf campaign)."
+    },
+    {
+      src: "assets/img/seawolf-wheelhouse-1200.jpg",
+      webp: "assets/img/seawolf-wheelhouse-1200.webp",
+      alt: "The wheelhouse of the fireboat Seawolf with helm, engine gauges, and radios",
+      caption: "Seawolf's wheelhouse. Photo: Azul Marine Group (Seawolf campaign)."
+    },
+    {
+      src: "assets/img/seawolf-pump-1200.jpg",
+      webp: "assets/img/seawolf-pump-1200.webp",
+      alt: "A fire pump casing lifted on a chain hoist with the impeller exposed",
+      caption: "Fire pump work aboard Seawolf. Photo: Azul Marine Group (Seawolf campaign)."
+    },
+    {
       src: "assets/img/rescue-boat-crew-820.jpg",
       webp: "assets/img/rescue-boat-crew-820.webp",
       alt: "Crew members in helmets and float coats aboard a red and grey rescue boat on the Delta, with an inflatable boat alongside",

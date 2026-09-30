@@ -48,6 +48,10 @@ Open `assets/js/media-data.js`.
 
 The gallery on `media.html` and the lightbox pick the changes up automatically. No rebuild is needed for media changes.
 
+## Donations
+
+All donate buttons point to the organization's GoFundMe campaign for the Fireboat Seawolf restoration. The URL lives in `src/build.mjs` as `site.gofundme`; change it there and rebuild to point the whole site at a different campaign or processor.
+
 ## Forms
 
 The forms on `contact.html` and `get-involved.html` work in two modes:
@@ -71,10 +75,10 @@ Everything below is shown as a clearly labeled placeholder in the site. Nothing 
 | --- | --- | --- |
 | Leadership (board, officers) | `about.html` | Replace the six "To be named" circles with names, titles, and photos |
 | Partner agencies and organizations | `get-involved.html` | Provide the list the organization is authorized to publish |
-| Online donation link | `donate.html` | Set up a processor (PayPal, Zeffy, Givebutter, etc.) and paste the link into the Donate Now button |
+| Seawolf campaign launch date | `news.html`, `index.html` | The news card says "Campaign underway"; replace with the real date |
 | Events | `get-involved.html`, `news.html` | Add as scheduled |
 | Videos | `assets/js/media-data.js` | Provide files or YouTube/Vimeo links (the organization is sending these) |
-| News stories | `news.html`, `index.html` | Stories are being provided; replace the two placeholder cards |
+| News stories | `news.html`, `index.html` | Stories are being provided; replace the remaining placeholder card |
 | Program photos for Stewardship and Advisory | `index.html`, `programs.html` | Provide photos of water testing, levee inspection, vessel support |
 | Office hours | `contact.html` | Confirm and add |
 | Web3Forms access key | forms | Create and paste in |

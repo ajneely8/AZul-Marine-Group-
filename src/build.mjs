@@ -37,6 +37,7 @@ const site = {
   ein: '33-1710533',
   caEntity: '6441651',
   facebook: 'https://www.facebook.com/profile.php?id=61573883656021',
+  gofundme: 'https://www.gofundme.com/f/support-seawolfs-return-to-protect-our-waters',
   year: String(new Date().getFullYear()),
 };
 

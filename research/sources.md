@@ -57,3 +57,13 @@ Compiled 2026-09-30 while building the website. Every fact used on the site is l
 ## Photo rights
 
 The photos were published by the organization on its own public Facebook page and are used here on behalf of the organization for its own website. Confirm with the organization that it holds the rights to the helicopter photograph before launch.
+
+## GoFundMe campaign (added 2026-09-30)
+
+https://www.gofundme.com/f/support-seawolfs-return-to-protect-our-waters (link supplied by Aiden; tracking parameters stripped)
+
+- Title: "Support Seawolf's Return to Protect Our Waters". Organizer: Eric Koster, Stockton, CA. Beneficiary: Azul Marine Group, 501(c)(3).
+- Facts used on the site: AMG acquired the retired City of Oakland fireboat Seawolf; relocating to J&H Marine in Stockton for restoration; intended uses (marine firefighting support, training and interagency exercises, SAR, water quality testing, levee and shoreline inspection, boating safety education); the "How donations will be used" list and suggested giving levels, quoted from the campaign.
+- Not used: goal and amount raised (they change), and the campaign launch date (not shown on the page; ask the client).
+- Photos saved in `research/gofundme/` (5 of the campaign's 8 images were retrievable): Seawolf at dock, wheelhouse, fire pump work, dive team on the stern, diver alongside the hull. Published by the organization on its own campaign; used here on its behalf.
+- Eric Koster appears publicly as campaign organizer and is also the registered agent on the SOS record. His title in the organization is still unconfirmed, so he is not listed under Leadership.
