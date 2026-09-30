@@ -1,0 +1,30 @@
+  <header class="site-header" id="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="Azul Marine Group home">
+        {{logoHeader}}
+        <span class="brand__text">
+          <span class="brand__name">Azul Marine Group</span>
+          <span class="brand__tag">Maritime Emergency Support &middot; Marine Training &middot; Delta Stewardship</span>
+        </span>
+      </a>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul class="primary-nav__list">
+        {{navItems}}
+        </ul>
+        <div class="primary-nav__mobile-extra">
+          <a class="btn btn--primary btn--block" href="get-involved.html">Get Involved</a>
+          <p class="primary-nav__contact">
+            <a href="{{site.phoneHref}}">{{site.phone}}</a><br>
+            <a href="mailto:{{site.email}}">{{site.email}}</a>
+          </p>
+        </div>
+      </nav>
+      <div class="site-header__actions">
+        <a class="btn btn--primary site-header__cta" href="get-involved.html">Get Involved</a>
+        <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
+          <span class="menu-toggle__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="menu-toggle__label">Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>

@@ -1,0 +1,59 @@
+---
+{
+  "title": "Media Gallery | Azul Marine Group",
+  "description": "Video and photo gallery from Azul Marine Group: training, exercises, and operations on the Sacramento, San Joaquin, and Mokelumne Rivers.",
+  "scripts": ["assets/js/media-data.js", "assets/js/media.js"]
+}
+---
+    <section class="page-banner">
+      <div class="container">
+        <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="index.html">Home</a></li><li>Media</li></ol>
+        <h1>Media Gallery</h1>
+        <p class="lead">Video and photography from training, exercises, and operations on the Delta. All photographs were published by the organization. Video will be added as it is provided.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="media-tabs" role="tablist" aria-label="Media type">
+          <button type="button" role="tab" id="tab-videos" aria-selected="true" aria-controls="panel-videos">Video</button>
+          <button type="button" role="tab" id="tab-photos" aria-selected="false" aria-controls="panel-photos">Photos</button>
+        </div>
+
+        <div id="panel-videos" role="tabpanel" aria-labelledby="tab-videos">
+          <div class="section__head">
+            <h2 class="rule">Video library</h2>
+            <p>Each entry supports a thumbnail, title, description, date or event, and full-screen playback from YouTube, Vimeo, or a locally hosted file. Entries marked "Video Coming Soon" are reserved for footage the organization will provide.</p>
+          </div>
+          <div class="video-grid" id="video-grid">
+            <noscript><p>Videos require JavaScript to display. Please enable JavaScript or contact us for links.</p></noscript>
+          </div>
+        </div>
+
+        <div id="panel-photos" role="tabpanel" aria-labelledby="tab-photos" hidden>
+          <div class="section__head">
+            <h2 class="rule">Photo gallery</h2>
+            <p>Photography published by Azul Marine Group. Select a photo to view it larger.</p>
+          </div>
+          <div class="photo-grid" id="photo-grid">
+            <noscript>
+              <figure class="figure"><img src="assets/img/rescue-boat-crew-820.jpg" alt="Crew members aboard a rescue boat on the Delta" loading="lazy"><figcaption>Rescue boat and crew. Photo: Azul Marine Group.</figcaption></figure>
+              <figure class="figure"><img src="assets/img/delta-helicopter-1008.jpg" alt="A helicopter over a Delta waterway above a small boat" loading="lazy"><figcaption>Helicopter and small-boat operations on the Delta. Photo: Azul Marine Group.</figcaption></figure>
+            </noscript>
+          </div>
+          <div class="notice" style="margin-top:2rem">
+            <strong>Adding photos.</strong> Additional photographs from the organization's archive can be added to the gallery at any time. Place the file in <code>assets/img/</code> and add an entry to <code>assets/js/media-data.js</code>.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="media-cta">
+      <div class="container cta-band__inner">
+        <div>
+          <h2 id="media-cta">Media inquiries</h2>
+          <p>For photo or video requests, interviews, or use of the organization's images, contact {{site.email}}.</p>
+        </div>
+        <a class="btn btn--outline-light" href="contact.html">Contact Us</a>
+      </div>
+    </section>

@@ -1,0 +1,168 @@
+---
+{
+  "title": "Get Involved | Volunteer, Partner, or Support Azul Marine Group",
+  "description": "Volunteer your marine expertise, partner with Azul Marine Group as an agency, support the mission of a 501(c)(3) public charity, or attend an upcoming event."
+}
+---
+    <section class="page-banner">
+      <div class="container">
+        <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="index.html">Home</a></li><li>Get Involved</li></ol>
+        <h1>Get Involved</h1>
+        <p class="lead">Azul Marine Group runs on the time and expertise of marine professionals and on the support of the agencies and communities it serves. Choose the path that fits you.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight section--grey" aria-label="Ways to get involved">
+      <div class="container">
+        <ul class="facts__list" style="border:1px solid var(--line);background:#fff;padding:0 1.5rem">
+          <li><span class="facts__label">01</span><a class="facts__value" href="#volunteer">Volunteer your expertise</a></li>
+          <li><span class="facts__label">02</span><a class="facts__value" href="#partner">Partner with us</a></li>
+          <li><span class="facts__label">03</span><a class="facts__value" href="#support">Support our mission</a></li>
+          <li><span class="facts__label">04</span><a class="facts__value" href="#events">Attend an event</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="volunteer" aria-labelledby="vol-heading">
+      <div class="container two-col">
+        <div class="prose">
+          <p class="eyebrow">01 &middot; Volunteer</p>
+          <h2 id="vol-heading" class="rule">Volunteer your expertise</h2>
+          <p>Membership is built around professional marine disciplines. If you have experience in one or more of the following, the organization would like to hear from you:</p>
+          <ul>
+            <li>Search and rescue</li>
+            <li>Diving</li>
+            <li>Salvage</li>
+            <li>Marine firefighting</li>
+            <li>Marine engineering</li>
+            <li>Licensed captain (please note your license type)</li>
+          </ul>
+          <p>Members take part in agency-requested assistance, training and joint exercises, and stewardship work such as water quality testing and levee integrity inspections. Tell us about your background and availability using the form, and a member of the organization will follow up.</p>
+          <div class="notice">
+            <strong>Not a marine professional?</strong> Support is still welcome. See <a href="#support">Support our mission</a> and <a href="#events">Attend an event</a> below.
+          </div>
+        </div>
+        <div>
+          <form class="form" data-form data-to="{{site.email}}" data-subject="Volunteer inquiry from the website" data-access-key="" novalidate>
+            <h3 style="margin-top:0">Volunteer inquiry</h3>
+            <div class="form__row">
+              <div class="field"><label for="v-name">Full name</label><input id="v-name" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="v-email">Email</label><input id="v-email" name="email" type="email" autocomplete="email" required></div>
+            </div>
+            <div class="form__row">
+              <div class="field"><label for="v-phone">Phone <span class="hint">(optional)</span></label><input id="v-phone" name="phone" type="tel" autocomplete="tel"></div>
+              <div class="field"><label for="v-city">City</label><input id="v-city" name="city" type="text" autocomplete="address-level2"></div>
+            </div>
+            <div class="field">
+              <label for="v-discipline">Primary discipline</label>
+              <select id="v-discipline" name="discipline" required>
+                <option value="">Select one</option>
+                <option>Search and Rescue</option>
+                <option>Diving</option>
+                <option>Salvage</option>
+                <option>Marine Firefighting</option>
+                <option>Marine Engineering</option>
+                <option>Licensed Captain</option>
+                <option>Other / general support</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="v-exp">Experience, certifications, and availability</label>
+              <textarea id="v-exp" name="experience" required></textarea>
+            </div>
+            <input type="checkbox" name="botcheck" class="visually-hidden" tabindex="-1" aria-hidden="true">
+            <button class="btn btn--primary" type="submit">Send volunteer inquiry</button>
+            <div class="form__status" aria-live="polite"></div>
+            <p class="form__note">Your information goes only to Azul Marine Group at {{site.email}} and is used to follow up on your inquiry.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--grey" id="partner" aria-labelledby="partner-heading">
+      <div class="container two-col">
+        <div class="prose">
+          <p class="eyebrow">02 &middot; Agencies and Organizations</p>
+          <h2 id="partner-heading" class="rule">Partner with us</h2>
+          <p>Azul Marine Group works at the request of, and in coordination with, the public agencies responsible for the Delta's waterways. Agencies, fire and rescue departments, law enforcement marine units, emergency management offices, reclamation districts, and community organizations can:</p>
+          <ul>
+            <li>Request assistance during a maritime emergency (for incidents in progress, call 911 first)</li>
+            <li>Coordinate training or plan a joint exercise</li>
+            <li>Request vessel support or expert advice for a planned operation</li>
+            <li>Collaborate on research, water quality testing, or levee integrity inspections</li>
+          </ul>
+          <p>The organization's disciplines are listed on the <a href="programs.html">Programs</a> page. Contact us with a description of the need, the location, and the timeframe.</p>
+        </div>
+        <div>
+          <div class="panel">
+            <h3 class="panel__title">Agency contact</h3>
+            <p style="margin-bottom:.5rem"><a class="contact-block big" style="border:0;padding:0;font-size:1.5rem" href="{{site.phoneHref}}">{{site.phone}}</a></p>
+            <p><a href="mailto:{{site.email}}?subject=Agency%20partnership%20inquiry">{{site.email}}</a></p>
+            <p class="muted" style="font-size:.9rem;margin-top:1rem">Based in Discovery Bay, California. Serving agencies across the Sacramento, San Joaquin, and Mokelumne River corridors.</p>
+            <a class="btn btn--navy" href="contact.html" style="margin-top:1rem">Contact form</a>
+          </div>
+          <div class="notice notice--dev" style="margin-top:1.25rem">
+            <strong>Development placeholder.</strong> A list of partner agencies and organizations will appear here once the organization confirms which partnerships it is authorized to publish. No partners are shown until they are verified.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="support" aria-labelledby="support-heading">
+      <div class="container two-col">
+        <div class="prose">
+          <p class="eyebrow">03 &middot; Donate or Sponsor</p>
+          <h2 id="support-heading" class="rule">Support our mission</h2>
+          <p>The Azul Marine Group is recognized by the IRS as a 501(c)(3) public charity (EIN {{site.ein}}). Contributions are tax deductible to the extent allowed by law.</p>
+          <p>Financial support goes toward the work described on this site: equipment and vessel readiness for agency-requested assistance, training in boating safety and rescue operations, and stewardship work on the Sacramento, San Joaquin, and Mokelumne Rivers.</p>
+          <h3>Ways to give</h3>
+          <ul>
+            <li><strong>By check.</strong> Make checks payable to <em>The Azul Marine Group Inc.</em> and mail to {{site.mailing1}}, {{site.mailing2}}.</li>
+            <li><strong>Sponsor a program or initiative.</strong> Businesses and organizations interested in sponsoring training, equipment, or stewardship work should contact {{site.email}}.</li>
+            <li><strong>In-kind support.</strong> Equipment, vessel time, fuel, and training facilities are also valuable. Contact the organization to discuss.</li>
+          </ul>
+          <p class="muted" style="font-size:.9rem">Please consult your tax advisor regarding the deductibility of your contribution. The organization will provide a written acknowledgement for gifts as required by law.</p>
+        </div>
+        <div>
+          <div class="panel panel--navy">
+            <h3 class="panel__title">Online giving</h3>
+            <div class="placeholder" style="min-height:160px;background:repeating-linear-gradient(135deg,#13365f 0 14px,#102f55 14px 28px);border-color:#5f7ca0;color:#c9d6e4">
+              <div>
+                <span class="placeholder__label" style="color:#f1b8b4">Development placeholder</span>
+                <p>An online donation button will be placed here once the organization sets up a payment processor (for example PayPal Giving Fund, Zeffy, or Givebutter).</p>
+              </div>
+            </div>
+            <a class="btn btn--primary btn--block" href="mailto:{{site.email}}?subject=Supporting%20Azul%20Marine%20Group" style="margin-top:1rem">Contact us about giving</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--grey" id="events" aria-labelledby="events-heading">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">04 &middot; Events</p>
+          <h2 id="events-heading" class="rule">Attend an event</h2>
+          <p>Training days, boating safety sessions, joint exercises open to partners, and community events will be listed here as they are scheduled.</p>
+        </div>
+        <div class="news-list">
+          <article class="news-item news-item--placeholder">
+            <div class="news-item__date">No date set<span>Upcoming</span></div>
+            <div>
+              <h3>No public events are currently scheduled</h3>
+              <p>Check back, or follow the organization on <a href="{{site.facebook}}" rel="noopener" target="_blank">Facebook</a> for announcements. Agencies interested in scheduling training or an exercise can <a href="#partner">contact the organization directly</a>.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="gi-cta">
+      <div class="container cta-band__inner">
+        <div>
+          <h2 id="gi-cta">Questions before you commit?</h2>
+          <p>Call {{site.phone}} or email {{site.email}}. We are glad to talk it through.</p>
+        </div>
+        <a class="btn btn--outline-light" href="contact.html">Contact Us</a>
+      </div>
+    </section>
