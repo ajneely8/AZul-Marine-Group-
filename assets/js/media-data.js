@@ -66,6 +66,36 @@ window.AMG_MEDIA = {
   ],
   photos: [
     {
+      src: "assets/img/seawolf-underway-1200.jpg",
+      webp: "assets/img/seawolf-underway-1200.webp",
+      alt: "Fireboat Sea Wolf underway past the Port of Oakland container cranes",
+      caption: "Sea Wolf leaving Oakland for Stockton, July 27, 2026. Photo: Azul Marine Group."
+    },
+    {
+      src: "assets/img/crew-antioch-1200.jpg",
+      webp: "assets/img/crew-antioch-1200.webp",
+      alt: "Four crew members standing on the bow of Sea Wolf as she passes under the Antioch Bridge",
+      caption: "The transit crew on the bow under the Antioch Bridge. Photo: Azul Marine Group."
+    },
+    {
+      src: "assets/img/helm-sendoff-portrait-1000.jpg",
+      webp: "assets/img/helm-sendoff-portrait-1000.webp",
+      alt: "View from the wheelhouse of Sea Wolf as a fireboat sprays arcs of water ahead during the send-off",
+      caption: "From the helm: the fireboat send-off in the Oakland Estuary. Photo: Azul Marine Group."
+    },
+    {
+      src: "assets/img/crew-wheelhouse-portrait-1000.jpg",
+      webp: "assets/img/crew-wheelhouse-portrait-1000.webp",
+      alt: "Three crew members in the wheelhouse of Sea Wolf seen through the forward window",
+      caption: "In the wheelhouse during the transit. Photo: Azul Marine Group."
+    },
+    {
+      src: "assets/img/bow-captain-portrait-1000.jpg",
+      webp: "assets/img/bow-captain-portrait-1000.webp",
+      alt: "A crew member in a life vest on the bow of Sea Wolf with the Bay behind",
+      caption: "On the bow, crossing the Bay. Photo: Azul Marine Group."
+    },
+    {
       src: "assets/img/seawolf-dock-1200.jpg",
       webp: "assets/img/seawolf-dock-1200.webp",
       alt: "The retired City of Oakland fireboat Sea-Wolf, red hull and white wheelhouse, tied up at a dock",

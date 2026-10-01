@@ -75,3 +75,7 @@ https://www.gofundme.com/f/support-seawolfs-return-to-protect-our-waters (link s
 Facts used on the site: December 2017 Highway 12 / Tower Park bridge tragedy (three lives); John Garza, retired Fremont firefighter and marine captain; Pacific Coast Water Rescue (PCWR) trained and certified 150+ firefighters since 2017; connection with J&H Marine, Stockton; Sea Wolf is a 60-foot aluminum fireboat built 1994 for Oakland Fire Department after the 1989 Loma Prieta earthquake, up to 8,000 gpm through four monitors; Oakland City Council approved sale to AMG for $25,000 on May 5, 2026; purchase agreement signed July 2026; July 27, 2026 transit crew John Garza, Eric Koster, retired Oakland Fire Lt. Scott Hellige, Gregg Heim, Daniel Murphy Gengler; escorted by Oakland fireboat Bay Wolf and SF fireboat St. Francis; AMG formed as a California nonprofit in 2025 and granted 501(c)(3); role is to complement, not replace, public agencies.
 
 Not used: the magazine's photographs (copyright of the publisher and photographers). The sale price is in the research notes but not on the site.
+
+## Photos supplied by Aiden (added 2026-09-30)
+
+Five photographs from the July 27, 2026 Sea Wolf transit, supplied by the client on behalf of the organization and saved in research/supplied/: Sea Wolf underway past the Port of Oakland cranes; the transit crew on the bow under the Antioch Bridge; the view from the helm during the fireboat send-off; three crew in the wheelhouse; a crew member on the bow. Captions do not name individuals.
