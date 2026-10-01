@@ -77,7 +77,7 @@ Everything below is shown as a clearly labeled placeholder in the site. Nothing 
 
 | Item | Where | What to do |
 | --- | --- | --- |
-| Leadership (board, officers) | `about.html` | Replace the six "To be named" circles with names, titles, and photos |
+| Team photos | `assets/img/team/` | Add `01.jpg` to `09.jpg` (see the README in that folder); names and titles are already in place |
 | Partner agencies and organizations | `get-involved.html` | Provide the list the organization is authorized to publish |
 | Seawolf campaign launch date | `news.html`, `index.html` | The news card says "Campaign underway"; replace with the real date |
 | Events | `get-involved.html`, `news.html` | Add as scheduled |
