@@ -84,6 +84,7 @@
     lastFocus = document.activeElement;
     stage.innerHTML = html;
     stage.classList.toggle('lightbox__stage--photo', !!isPhoto);
+    stage.classList.remove('lightbox__stage--portrait');
     title.textContent = t || '';
     desc.textContent = d || '';
     lb.classList.add('is-open');
@@ -114,6 +115,7 @@
         html = '<video controls autoplay playsinline' + (v.poster ? ' poster="' + esc(v.poster) + '"' : '') + '><source src="' + esc(v.src) + '" type="video/mp4">Your browser does not support embedded video.</video>';
       }
       open(html, v.title, [v.date, v.event, v.description].filter(Boolean).join(' · '), false);
+      stage.classList.toggle('lightbox__stage--portrait', !!v.portrait);
     } else if (pb) {
       var p = data.photos[+pb.getAttribute('data-photo')];
       open('<img src="' + esc(p.src) + '" alt="' + esc(p.alt) + '">', 'Photo', p.caption, true);

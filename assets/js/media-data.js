@@ -8,7 +8,8 @@
      type: "file"      src: path to an .mp4 file in assets/video/
      type: ""          (no video yet) shows a "Video Coming Soon" card
 
-   Optional: poster (thumbnail image path), date (free text), event.
+   Optional: poster (thumbnail image path), date (free text), event,
+   portrait: true (vertical phone video; opens in a tall player).
 
    Photos work the same way in AMG_MEDIA.photos. Every photo listed
    here was published by the organization on its Facebook page.
@@ -25,44 +26,43 @@ window.AMG_MEDIA = {
       poster: "assets/video/state-fire-training-poster.jpg"
     },
     {
-      title: "Swiftwater and small-boat rescue operations",
-      description: "Video to be provided by Azul Marine Group.",
-      date: "Date to be confirmed",
-      type: "",
-      src: "",
-      poster: ""
+      title: "Sea Horse 36 Delivery",
+      description: "Running a one-of-a-kind steel-hulled motor sail vessel from J&H Marine in Stockton to the Oakland Estuary.",
+      date: "May 2025",
+      event: "Video: Pacific Coast Water Rescue",
+      type: "file",
+      src: "assets/video/sea-horse-36-delivery.mp4",
+      poster: "assets/video/sea-horse-36-delivery-poster.jpg"
     },
     {
-      title: "Dive and salvage support",
-      description: "Video to be provided by Azul Marine Group.",
-      date: "Date to be confirmed",
-      type: "",
-      src: "",
-      poster: ""
+      title: "Training with Woodbridge Fire District",
+      description: "On the water with Woodbridge Fire District to make the Delta a safer place.",
+      date: "December 2023",
+      event: "Video: Pacific Coast Water Rescue",
+      type: "file",
+      portrait: true,
+      src: "assets/video/woodbridge-fire-training.mp4",
+      poster: "assets/video/woodbridge-fire-training-poster.jpg"
     },
     {
-      title: "Boating safety education",
-      description: "Video to be provided by Azul Marine Group.",
-      date: "Date to be confirmed",
-      type: "",
-      src: "",
-      poster: ""
+      title: "Carquinez Strait Water Rescue Drill",
+      description: "A State Fire class and drill for water rescue teams from the Benicia, Rio Vista, and Napa fire departments, on a vessel provided by Protector Service Center.",
+      date: "November 21, 2020",
+      event: "Video: Pacific Coast Water Rescue",
+      type: "file",
+      portrait: true,
+      src: "assets/video/carquinez-strait-drill.mp4",
+      poster: "assets/video/carquinez-strait-drill-poster.jpg"
     },
     {
-      title: "Water quality and levee inspection work",
-      description: "Video to be provided by Azul Marine Group.",
-      date: "Date to be confirmed",
-      type: "",
-      src: "",
-      poster: ""
-    },
-    {
-      title: "Organization overview",
-      description: "Video to be provided by Azul Marine Group.",
-      date: "Date to be confirmed",
-      type: "",
-      src: "",
-      poster: ""
+      title: "Haulover Inlet",
+      description: "Captains on Call observe one of the most challenging inlets for mariners, a well-known training example in Florida.",
+      date: "April 2022",
+      event: "Video: Pacific Coast Water Rescue",
+      type: "file",
+      portrait: true,
+      src: "assets/video/haulover-inlet.mp4",
+      poster: "assets/video/haulover-inlet-poster.jpg"
     }
   ],
   photos: [
