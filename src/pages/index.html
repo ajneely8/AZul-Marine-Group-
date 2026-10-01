@@ -19,30 +19,32 @@
 
     <section class="slideshow" data-slideshow data-interval="7000" aria-roledescription="carousel" aria-label="Highlights">
       <div class="slideshow__track">
-        <div class="slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 2">
-          <div class="slide__card">
-            <h2>Help bring Fireboat Seawolf back to the Delta</h2>
-            <p>Azul Marine Group has acquired the retired City of Oakland fireboat Seawolf. Restoration begins at J&amp;H Marine in Stockton. Your donation helps return her to service.</p>
-            <a class="btn btn--primary" href="donate.html">Support the Restoration</a>
-          </div>
-          <div class="slide__media">
-            <picture>
-              <source srcset="assets/img/slide-seawolf-1400.webp" type="image/webp">
-              <img src="assets/img/slide-seawolf-1400.jpg" width="1400" height="820" alt="The retired City of Oakland fireboat Sea-Wolf, red hull and white wheelhouse, tied up at a dock" fetchpriority="high">
-            </picture>
+        <div class="slide slide--full is-active" role="group" aria-roledescription="slide" aria-label="1 of 2">
+          <picture class="slide__bg">
+            <source srcset="assets/img/full-underway-1920.webp" type="image/webp">
+            <img src="assets/img/full-underway-1920.jpg" width="1920" height="1080" alt="Fireboat Sea Wolf underway past the Port of Oakland container cranes" fetchpriority="high">
+          </picture>
+          <div class="slide__scrim" aria-hidden="true"></div>
+          <div class="container slide__overlay">
+            <div class="slide__card slide__card--overlay">
+              <h2>Help bring Fireboat Seawolf back to the Delta</h2>
+              <p>Azul Marine Group has acquired the retired City of Oakland fireboat Seawolf. Restoration begins at J&amp;H Marine in Stockton. Your donation helps return her to service.</p>
+              <a class="btn btn--primary" href="donate.html">Support the Restoration</a>
+            </div>
           </div>
         </div>
-        <div class="slide" role="group" aria-roledescription="slide" aria-label="2 of 2" aria-hidden="true">
-          <div class="slide__card">
-            <h2>Supporting agencies during maritime emergencies</h2>
-            <p>Search and rescue, diving, salvage, marine firefighting, and licensed captains, available at the request of the agency responsible for an incident.</p>
-            <a class="btn btn--primary" href="programs.html#emergency-support">Learn More</a>
-          </div>
-          <div class="slide__media">
-            <picture>
-              <source srcset="assets/img/slide-seawolf-divers-1400.webp" type="image/webp">
-              <img src="assets/img/slide-seawolf-divers-1400.jpg" width="1400" height="820" alt="Two members help a diver gear up on the stern of the fireboat Seawolf" loading="lazy">
-            </picture>
+        <div class="slide slide--full" role="group" aria-roledescription="slide" aria-label="2 of 2" aria-hidden="true">
+          <picture class="slide__bg">
+            <source srcset="assets/img/full-divers-1920.webp" type="image/webp">
+            <img src="assets/img/full-divers-1920.jpg" width="1920" height="1080" alt="Two members help a diver gear up on the stern of the fireboat Seawolf" loading="lazy">
+          </picture>
+          <div class="slide__scrim" aria-hidden="true"></div>
+          <div class="container slide__overlay">
+            <div class="slide__card slide__card--overlay">
+              <h2>Supporting agencies during maritime emergencies</h2>
+              <p>Search and rescue, diving, salvage, marine firefighting, and licensed captains, available at the request of the agency responsible for an incident.</p>
+              <a class="btn btn--primary" href="programs.html#emergency-support">Learn More</a>
+            </div>
           </div>
         </div>
       </div>

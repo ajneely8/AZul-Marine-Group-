@@ -252,6 +252,29 @@ small { font-size: 0.875rem; }
   .slide__card { border-right: 0; border-top: 6px solid var(--red-600); }
 }
 
+/* Full-bleed slides: photo fills the slide, card overlays it */
+.slide--full { display: block; position: relative; min-height: clamp(480px, 56vw, 720px); overflow: hidden; }
+.slide--full .slide__bg img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.slide__scrim { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(7,26,51,.55) 0%, rgba(7,26,51,.2) 55%, rgba(7,26,51,.05) 100%); }
+.slide__overlay { position: relative; z-index: 1; display: flex; align-items: center; min-height: inherit; height: 100%; padding-top: 2.5rem; padding-bottom: 2.5rem; }
+.slide--full .slide__overlay { min-height: clamp(480px, 56vw, 720px); }
+.slide__card--overlay { max-width: 520px; background: rgba(11,37,69,.92); border-right: 0; border-left: 6px solid var(--red-600); box-shadow: 0 16px 40px rgba(7,26,51,.35); }
+@media (max-width: 900px) {
+  .slide--full, .slide--full .slide__overlay { min-height: 0; }
+  .slide--full .slide__overlay { align-items: flex-end; padding-top: min(50vw, 420px); padding-bottom: 1.5rem; }
+  .slide__scrim { background: linear-gradient(180deg, rgba(7,26,51,.1) 0%, rgba(7,26,51,.25) 45%, rgba(7,26,51,.7) 100%); }
+  .slide__card--overlay { max-width: none; width: 100%; border-left: 0; border-top: 6px solid var(--red-600); }
+}
+@media (max-width: 700px) {
+  /* Phones: photo on top at full width, card stacked below so nothing covers the subject */
+  .slide--full { display: flex; flex-direction: column; }
+  .slide--full .slide__bg { order: 0; }
+  .slide--full .slide__bg img { position: static; aspect-ratio: 16 / 10; }
+  .slide__scrim { display: none; }
+  .slide--full .slide__overlay { order: 1; padding: 0; display: block; }
+  .slide__card--overlay { box-shadow: none; }
+}
+
 /* ---------- Tiles (FEMA "How can we help" style) ---------- */
 .tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.25rem; }
 @media (max-width: 960px) { .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
