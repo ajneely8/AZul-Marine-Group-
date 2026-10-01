@@ -57,6 +57,7 @@ const logoSymbol = `<svg xmlns="http://www.w3.org/2000/svg" style="position:abso
 const logoSvg = (cls, label) =>
   `<svg class="${cls}" viewBox="0 0 720 722" role="img" aria-label="${label}" focusable="false" fill="currentColor"><use href="#amg-logo"/></svg>`;
 
+const buildId = Date.now().toString(36);
 const shell = partial('shell.html');
 const header = partial('header.html');
 const footer = partial('footer.html');
@@ -95,12 +96,13 @@ for (const file of files) {
     logoHeader: logoSvg('brand__mark', 'Azul Marine Group'),
     logoFooter: logoSvg('footer-brand__mark', 'Azul Marine Group'),
     logoSymbol,
+    buildId,
     navItems: navHtml(out),
     bodyClass: meta.bodyClass || '',
     canonical: `${site.url}/${out === 'index.html' ? '' : out}`,
     ogImage: `${site.url}/assets/img/og-image.jpg`,
     jsonld: partial('jsonld.html'),
-    extraScripts: meta.scripts ? meta.scripts.map((s) => `<script src="${s}" defer></script>`).join('\n  ') : '',
+    extraScripts: meta.scripts ? meta.scripts.map((s) => `<script src="${s}?v=${buildId}" defer></script>`).join('\n  ') : '',
   };
 
   let html = render(shell, {

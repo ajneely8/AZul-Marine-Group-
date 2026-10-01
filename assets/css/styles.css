@@ -175,7 +175,7 @@ small { font-size: 0.875rem; }
   body.nav-open { overflow: hidden; }
   /* While the menu is open, lift the whole header (and the drawer inside it) above the dark backdrop */
   body.nav-open .site-header { z-index: 1000; }
-  .nav-backdrop { position: fixed; inset: 0; z-index: 950; background: rgba(7,26,51,.45); opacity: 0; visibility: hidden; transition: opacity .25s var(--ease); }
+  .nav-backdrop { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 950; background: rgba(7,26,51,.45); opacity: 0; visibility: hidden; transition: opacity .25s var(--ease); }
   body.nav-open .nav-backdrop { opacity: 1; visibility: visible; }
 }
 @media (max-width: 400px) {
@@ -236,7 +236,7 @@ small { font-size: 0.875rem; }
 .slide__card p { color: #d3deea; margin: 0 0 1.25rem; font-size: 1.05rem; }
 .slide__card .btn { align-self: flex-start; }
 .slide__media { position: relative; overflow: hidden; background: var(--navy-900); }
-.slide__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.slide__media img { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
 .slide__media--brand { display: flex; align-items: center; justify-content: center; background: var(--navy-700) repeating-linear-gradient(135deg, rgba(255,255,255,.03) 0 18px, rgba(255,255,255,0) 18px 36px); }
 .slide__media--brand svg { width: clamp(180px, 30%, 300px); height: auto; color: #fff; }
 .slide__credit { position: absolute; left: 0; bottom: 0; margin: 0; background: rgba(7,26,51,.75); color: #d3deea; font-size: 0.75rem; padding: 0.35rem 0.7rem; }
@@ -253,11 +253,12 @@ small { font-size: 0.875rem; }
 }
 
 /* Full-bleed slides: photo fills the slide, card overlays it */
-.slide--full { display: block; position: relative; aspect-ratio: 16 / 9; max-height: 88vh; min-height: 420px; overflow: hidden; }
-.slide--full .slide__bg { display: block; position: absolute; inset: 0; }
-.slide--full .slide__bg img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
-.slide__scrim { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(7,26,51,.78) 0%, rgba(7,26,51,.45) 45%, rgba(7,26,51,.1) 100%); }
-.slide__overlay { position: absolute; inset: 0; z-index: 1; display: flex; align-items: center; padding-top: 2.5rem; padding-bottom: 4.5rem; }
+.slide--full { display: block; position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: 88vh; min-height: 420px; overflow: hidden; }
+.slideshow__track { width: 100%; }
+.slide--full .slide__bg { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+.slide--full .slide__bg img { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.slide__scrim { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: linear-gradient(90deg, rgba(7,26,51,.78) 0%, rgba(7,26,51,.45) 45%, rgba(7,26,51,.1) 100%); }
+.slide__overlay { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1; display: flex; align-items: center; padding-top: 2.5rem; padding-bottom: 4.5rem; }
 .slide__card--overlay { max-width: 600px; background: transparent; border: 0; padding: 0; box-shadow: none; }
 .slide__card--overlay h2 { font-size: clamp(1.8rem, 1.2rem + 2vw, 2.8rem); text-shadow: 0 2px 10px rgba(7,26,51,.6); }
 .slide__card--overlay p { color: #eef3f8; font-size: 1.15rem; text-shadow: 0 1px 8px rgba(7,26,51,.7); }
@@ -270,10 +271,10 @@ small { font-size: 0.875rem; }
 @media (max-width: 700px) {
   /* Phones: photo on top at full width, text stacked below so nothing covers the subject */
   .slide--full { display: flex; flex-direction: column; aspect-ratio: auto; height: auto; min-height: 0; max-height: none; }
-  .slide--full .slide__bg { order: 0; position: static; display: block; width: 100%; inset: auto; }
-  .slide--full .slide__bg img { position: static; display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; inset: auto; }
+  .slide--full .slide__bg { order: 0; position: static; display: block; width: 100%; top: auto; right: auto; bottom: auto; left: auto; }
+  .slide--full .slide__bg img { position: static; display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; top: auto; right: auto; bottom: auto; left: auto; }
   .slide__scrim { display: none; }
-  .slide--full .slide__overlay { order: 1; position: static; display: block; background: var(--navy-800); padding: 1.5rem var(--gutter) 1.75rem; inset: auto; }
+  .slide--full .slide__overlay { order: 1; position: static; display: block; background: var(--navy-800); padding: 1.5rem var(--gutter) 1.75rem; top: auto; right: auto; bottom: auto; left: auto; }
   .slide__card--overlay h2, .slide__card--overlay p { text-shadow: none; }
   .slideshow__controls { position: static; background: var(--paper); border-bottom: 1px solid var(--line); padding: 0.6rem 0; }
   .slideshow__dot { border-color: var(--navy-800); }
@@ -315,7 +316,7 @@ small { font-size: 0.875rem; }
 /* ---------- Feature band (FEMA Training style) ---------- */
 .band { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0; border: 1px solid var(--line); background: var(--paper); }
 .band__media { position: relative; min-height: 320px; background: var(--navy-900); }
-.band__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.band__media img { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
 .band__media .slide__credit { font-size: 0.72rem; }
 .band__body { padding: clamp(1.75rem, 1.25rem + 2vw, 3rem); display: flex; flex-direction: column; justify-content: center; }
 .band__body h2 { margin-bottom: 0.75rem; }
@@ -497,7 +498,7 @@ small { font-size: 0.875rem; }
 .photo-grid .figure button:hover img { transform: scale(1.03); }
 
 /* Lightbox */
-.lightbox { position: fixed; inset: 0; z-index: 4000; background: rgba(7,26,51,.94); display: none; align-items: center; justify-content: center; padding: 1rem; }
+.lightbox { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 4000; background: rgba(7,26,51,.94); display: none; align-items: center; justify-content: center; padding: 1rem; }
 .lightbox.is-open { display: flex; }
 .lightbox__dialog { width: min(1100px, 100%); max-height: 100%; display: flex; flex-direction: column; }
 .lightbox__stage { background: #000; width: 100%; aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center; }
