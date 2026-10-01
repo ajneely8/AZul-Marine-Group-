@@ -8,7 +8,7 @@ No framework, no build dependencies on the server. Upload the folder and it work
 
 | Path | Purpose |
 | --- | --- |
-| `index.html`, `about.html`, `programs.html`, `media.html`, `news.html`, `get-involved.html`, `donate.html`, `contact.html`, `404.html` | The finished, deployable pages |
+| `index.html`, `about.html`, `programs.html`, `media.html`, `news.html`, `sea-wolfs-second-watch.html`, `get-involved.html`, `donate.html`, `contact.html`, `404.html` | The finished, deployable pages |
 | `assets/css/styles.css` | The single stylesheet (public-safety design system) |
 | `assets/js/main.js` | Slideshow, scroll reveal, sticky header, mobile navigation, forms |
 | `assets/js/media-data.js` | The video and photo library (edit this to add media) |
@@ -51,6 +51,10 @@ The gallery on `media.html` and the lightbox pick the changes up automatically. 
 ## Donations
 
 All donate buttons point to the organization's GoFundMe campaign for the Fireboat Seawolf restoration. The URL lives in `src/build.mjs` as `site.gofundme`; change it there and rebuild to point the whole site at a different campaign or processor.
+
+## Press coverage
+
+`sea-wolfs-second-watch.html` is an original account of the events reported in "Sea Wolf's Second Watch" (Bay & Delta Yachtsman, October 2026). The magazine's text and photographs are copyrighted by the publisher and are not reproduced; the page links to the digital issue instead. If the organization obtains permission to reprint the article or its photos, they can be added to this page.
 
 ## Forms
 
