@@ -12,7 +12,7 @@
     dragging: !isTouch,         // on phones, one finger scrolls the page; use the + / - buttons to zoom
     tap: false,
     zoomControl: true,
-    attributionControl: false   // credit is shown as text under the map instead
+    attributionControl: false   // replaced by the compact info button below
   });
 
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -62,6 +62,25 @@
       .addTo(map)
       .bindPopup(p.text);
   });
+
+  /* Compact map credit: a small "i" button that reveals the OpenStreetMap credit on tap or hover. */
+  var Info = L.Control.extend({
+    options: { position: 'bottomright' },
+    onAdd: function () {
+      var wrap = L.DomUtil.create('div', 'map-info');
+      wrap.innerHTML = '<button type="button" class="map-info__btn" aria-expanded="false" aria-label="Map credits">i</button>' +
+        '<span class="map-info__text" hidden>Map data &copy; <a href="https://www.openstreetmap.org/copyright" rel="noopener" target="_blank">OpenStreetMap</a> contributors</span>';
+      var btn = wrap.querySelector('button'), txt = wrap.querySelector('.map-info__text');
+      L.DomEvent.disableClickPropagation(wrap);
+      L.DomEvent.on(btn, 'click', function () {
+        var open = btn.getAttribute('aria-expanded') !== 'true';
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        txt.hidden = !open;
+      });
+      return wrap;
+    }
+  });
+  map.addControl(new Info());
 
   map.fitBounds(area.getBounds(), { padding: [8, 8] });
 
