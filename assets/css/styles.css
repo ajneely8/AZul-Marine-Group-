@@ -81,7 +81,7 @@ small { font-size: 0.875rem; }
   display: inline-block; font-family: var(--font-body); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
   color: var(--red-600); margin: 0 0 0.75rem;
 }
-.eyebrow--light { color: #f1b8b4; }
+.eyebrow--light { color: var(--red-600); }
 .lead { font-size: 1.2rem; line-height: 1.55; color: var(--ink-700); }
 .rule::after { content: ""; display: block; width: 56px; height: 4px; background: var(--red-600); margin: 0.9rem 0 0; }
 .rule--light::after { background: #fff; }
@@ -218,7 +218,7 @@ small { font-size: 0.875rem; }
 .title-band h1 { color: #fff; margin: 0 0 0.5rem; }
 .title-band__tag { display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; font-size: clamp(1rem, 0.9rem + 0.5vw, 1.25rem); font-weight: 600; color: #d3deea; margin: 0 auto 0.4rem; max-width: 46em; }
 .title-band__tag span { white-space: nowrap; }
-.title-band__tag i { font-style: normal; color: #f1b8b4; padding: 0 0.6rem; }
+.title-band__tag i { font-style: normal; color: var(--red-600); padding: 0 0.6rem; }
 @media (max-width: 600px) {
   .title-band__tag { flex-direction: column; align-items: center; gap: 0.15rem; }
   .title-band__tag i { display: none; }
@@ -439,7 +439,7 @@ small { font-size: 0.875rem; }
           mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 1.5a10.5 10.5 0 1 0 0 21 10.5 10.5 0 0 0 0-21Zm5.03 7.78-6 6a.75.75 0 0 1-1.06 0l-3-3a.75.75 0 1 1 1.06-1.06l2.47 2.47 5.47-5.47a.75.75 0 1 1 1.06 1.06Z'/%3E%3C/svg%3E") center / contain no-repeat;
 }
 .panel--navy .check-list li { color: #fff; border-color: rgba(255,255,255,.15); }
-.panel--navy .check-list li::before { background-color: #ff8f86; }
+.panel--navy .check-list li::before { background-color: var(--red-600); }
 @media (max-width: 860px) { .mission { grid-template-columns: 1fr; gap: 2rem; } }
 
 /* ---------- Serve blocks ---------- */
@@ -498,7 +498,7 @@ small { font-size: 0.875rem; }
 .activity__list { list-style: none; margin: 0; padding: 0; counter-reset: act; }
 .activity__list li { counter-increment: act; display: grid; grid-template-columns: 3rem 1fr; gap: 1rem; padding: 1.1rem 0; border-top: 1px solid rgba(255,255,255,.15); }
 .activity__list li:last-child { border-bottom: 1px solid rgba(255,255,255,.15); }
-.activity__list li::before { content: counter(act, decimal-leading-zero); font-family: var(--font-head); font-size: 1.6rem; font-weight: 600; color: #f1b8b4; line-height: 1; }
+.activity__list li::before { content: counter(act, decimal-leading-zero); font-family: var(--font-head); font-size: 1.6rem; font-weight: 600; color: var(--red-600); line-height: 1; }
 .activity__list h3 { font-size: 1.1rem; font-family: var(--font-body); font-weight: 700; margin: 0 0 0.25rem; }
 .activity__list p { color: #c9d6e4; font-size: 0.97rem; margin: 0; }
 .activity__note { font-size: 0.9rem; color: #a9c2dd; margin-top: 1.25rem; }
@@ -561,7 +561,7 @@ body.lightbox-open { overflow: hidden; }
 .cta-band { background: var(--red-600); color: #fff; }
 .cta-band__inner { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: 2.25rem 0; flex-wrap: wrap; }
 .cta-band h2 { color: #fff; margin: 0 0 0.25rem; }
-.cta-band p { margin: 0; color: #fbe3e1; max-width: 46em; }
+.cta-band p { margin: 0; color: #fff; max-width: 46em; }
 .cta-band .btn--outline-light:hover { color: var(--red-600); }
 
 /* ---------- News ---------- */
@@ -632,7 +632,7 @@ body.lightbox-open { overflow: hidden; }
 .site-footer { background: var(--navy-900); color: #c9d6e4; margin-top: 0; border-top: 6px solid var(--red-600); }
 .site-footer__grid { display: grid; grid-template-columns: 1.4fr 0.8fr 1fr 1fr; gap: 2.5rem; padding: 3.5rem 0 3rem; }
 .site-footer a { color: #fff; }
-.site-footer a:hover { color: #f1b8b4; }
+.site-footer a:hover { color: var(--red-600); }
 .site-footer__heading { font-family: var(--font-body); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #a9c2dd; margin: 0 0 0.85rem; }
 .site-footer__heading + .status-list, .site-footer address + .site-footer__heading { margin-top: 1.25rem; }
 .site-footer__nav ul { list-style: none; margin: 0; padding: 0; }
