@@ -266,17 +266,17 @@ small { font-size: 0.875rem; }
   .slide__card--overlay { max-width: none; width: 100%; border: 0; }
 }
 @media (max-width: 700px) {
-  /* Phones: photo on top at full width, card stacked below so nothing covers the subject */
-  .slide--full { display: flex; flex-direction: column; aspect-ratio: auto; }
-  .slide--full .slide__bg { order: 0; }
+  /* Phones: photo on top at full width, text stacked below so nothing covers the subject */
+  .slide--full { display: flex; flex-direction: column; aspect-ratio: auto; height: auto; min-height: 0; max-height: none; }
+  .slide--full .slide__bg { order: 0; position: static; display: block; width: 100%; inset: auto; }
+  .slide--full .slide__bg img { position: static; display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; inset: auto; }
+  .slide__scrim { display: none; }
+  .slide--full .slide__overlay { order: 1; position: static; display: block; background: var(--navy-800); padding: 1.5rem var(--gutter) 1.75rem; inset: auto; }
+  .slide__card--overlay h2, .slide__card--overlay p { text-shadow: none; }
   .slideshow__controls { position: static; background: var(--paper); border-bottom: 1px solid var(--line); padding: 0.6rem 0; }
   .slideshow__dot { border-color: var(--navy-800); }
   .slideshow__dot[aria-current="true"] { background: var(--navy-800); }
   .slideshow__prev, .slideshow__next { color: var(--navy-800); text-shadow: none; }
-  .slide--full .slide__bg img { position: static; aspect-ratio: 16 / 10; }
-  .slide__scrim { display: none; }
-  .slide--full .slide__overlay { order: 1; position: static; display: block; background: var(--navy-800); padding: 1.5rem var(--gutter) 1.75rem; }
-  .slide__card--overlay h2, .slide__card--overlay p { text-shadow: none; }
 }
 
 /* ---------- Tiles (FEMA "How can we help" style) ---------- */
