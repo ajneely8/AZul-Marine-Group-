@@ -522,10 +522,23 @@ small { font-size: 0.875rem; }
 @media (max-width: 600px) { .video-grid { grid-template-columns: 1fr; } }
 .vcard { background: var(--paper); border: 1px solid var(--line); display: flex; flex-direction: column; }
 .vcard__thumb { position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; background: var(--navy-900); border: 0; padding: 0; cursor: pointer; width: 100%; }
-.vcard__thumb img { width: 100%; height: 100%; object-fit: cover; }
-.vcard__play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 64px; height: 64px; background: rgba(11,37,69,.85); border: 2px solid #fff; display: flex; align-items: center; justify-content: center; color: #fff; transition: background .18s var(--ease); }
-.vcard__thumb:hover .vcard__play { background: var(--red-600); }
-.vcard__play svg { width: 26px; height: 26px; margin-left: 3px; }
+.vcard__thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s var(--ease); }
+.vcard__thumb::after { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at center, rgba(7,26,51,.28) 0%, rgba(7,26,51,.05) 55%, rgba(7,26,51,0) 70%), linear-gradient(180deg, rgba(7,26,51,0) 60%, rgba(7,26,51,.35) 100%); transition: background-color .3s var(--ease); pointer-events: none; }
+.vcard__play {
+  position: absolute; left: 50%; top: 50%; z-index: 1; transform: translate(-50%, -50%);
+  width: 68px; height: 68px; border-radius: 50%;
+  background: rgba(255,255,255,.94); color: var(--red-600);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 20px rgba(7,26,51,.35), 0 0 0 6px rgba(255,255,255,.25);
+  transition: transform .25s var(--ease), background-color .25s var(--ease), color .25s var(--ease), box-shadow .25s var(--ease);
+}
+.vcard__play svg { width: 28px; height: 28px; margin-left: 4px; }
+.vcard__thumb:hover .vcard__play, .vcard__thumb:focus-visible .vcard__play {
+  background: var(--red-600); color: #fff; transform: translate(-50%, -50%) scale(1.08);
+  box-shadow: 0 8px 24px rgba(7,26,51,.45), 0 0 0 8px rgba(179,38,30,.3);
+}
+.vcard__thumb:hover img { transform: scale(1.04); }
+@media (prefers-reduced-motion: reduce) { .vcard__play, .vcard__thumb img { transition: none; } .vcard__thumb:hover img { transform: none; } }
 .vcard__body { padding: 1rem 1.15rem 1.25rem; display: flex; flex-direction: column; gap: 0.35rem; }
 .vcard__date { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-500); }
 .vcard h3 { font-size: 1.08rem; font-family: var(--font-body); font-weight: 700; margin: 0; }
