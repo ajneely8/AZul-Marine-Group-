@@ -2,7 +2,8 @@
 {
   "title": "Azul Marine Group | Maritime Emergency Support and Marine Training | Sacramento, San Joaquin Delta, Bay Area",
   "description": "Azul Marine Group is a California nonprofit of marine professionals who assist local, regional, state, and federal agencies during maritime emergencies and deliver marine training and waterway stewardship across the Sacramento, San Joaquin, and Mokelumne Rivers.",
-  "bodyClass": "page-home"
+  "bodyClass": "page-home",
+  "scripts": ["assets/js/service-map.js"]
 }
 ---
     <section class="title-band" aria-labelledby="hero-heading">
@@ -118,6 +119,31 @@
               <p>Practical guidance and vessels for planned agency operations.</p>
             </div>
           </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--grey" id="service-area" aria-labelledby="area-heading">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+      <div class="container service-area">
+        <div class="service-area__text">
+          <p class="eyebrow">Where We Serve</p>
+          <h2 id="area-heading" class="rule">Sacramento, the San Joaquin Delta, and the Bay Area</h2>
+          <p>Azul Marine Group supports agencies and communities across more than a thousand miles of connected waterways, from the Sacramento River through the Delta to San Francisco Bay.</p>
+          <ul class="check-list service-area__list">
+            <li>Sacramento River corridor</li>
+            <li>San Joaquin River and the Delta</li>
+            <li>Mokelumne River</li>
+            <li>San Francisco Bay and Bay Area waterways</li>
+          </ul>
+          <p class="muted service-area__note">Home port: Fireboat Sea Wolf at J&amp;H Marine, Stockton. The shaded area is approximate. Agencies outside it are welcome to <a href="contact.html">contact us</a>.</p>
+        </div>
+        <div class="service-area__map">
+          <div id="service-map" class="service-map" role="region" aria-label="Map of the Azul Marine Group service area: Sacramento, the San Joaquin Delta, and the Bay Area">
+            <noscript><p style="padding:1rem">The interactive map requires JavaScript. Our service area covers Sacramento, the San Joaquin Delta, and the Bay Area.</p></noscript>
+          </div>
+          <p class="service-map__credit">Map data &copy; <a href="https://www.openstreetmap.org/copyright" rel="noopener" target="_blank">OpenStreetMap</a> contributors</p>
         </div>
       </div>
     </section>

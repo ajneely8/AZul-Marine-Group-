@@ -313,6 +313,32 @@ small { font-size: 0.875rem; }
 .tile h3 { font-family: var(--font-body); font-size: 1.15rem; font-weight: 700; margin: 0 0 0.35rem; color: var(--navy-800); }
 .tile p { margin: 0; font-size: 0.98rem; color: var(--ink-700); }
 
+/* ---------- Service area map ---------- */
+.service-area { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: 2.5rem; align-items: center; }
+.service-area__list { margin: 1.25rem 0; }
+.service-area__note { font-size: 0.92rem; }
+.service-map { height: 460px; width: 100%; border: 1px solid var(--line-strong); background: var(--paper-3); }
+.service-map__credit { margin: 0.4rem 0 0; font-size: 0.72rem; color: var(--ink-500); text-align: right; }
+.service-map__credit a { color: inherit; }
+.service-map .leaflet-popup-content { font-family: var(--font-body); font-size: 0.95rem; line-height: 1.45; }
+.map-pin { position: relative; }
+.map-pin__dot { position: absolute; left: 0; top: 0; width: 14px; height: 14px; border-radius: 50%; background: var(--navy-800); border: 2px solid #fff; box-shadow: 0 1px 4px rgba(7,26,51,.4); }
+.map-pin--home .map-pin__dot { width: 18px; height: 18px; background: var(--red-600); }
+.map-pin__label { position: absolute; left: 20px; top: -3px; white-space: nowrap; font-family: var(--font-body); font-size: 0.8rem; font-weight: 700; color: var(--navy-800); background: rgba(255,255,255,.92); padding: 1px 6px; border-radius: 2px; box-shadow: 0 1px 3px rgba(7,26,51,.2); }
+.map-pin--home .map-pin__label { left: 24px; top: -1px; color: #fff; background: var(--red-600); }
+.map-pin--left .map-pin__label { left: auto; right: 6px; }
+.service-map .leaflet-tile-pane { filter: saturate(0.75) contrast(0.95); }
+@media (max-width: 900px) {
+  .service-area { grid-template-columns: 1fr; gap: 1.5rem; }
+  .service-map { height: 380px; }
+  .map-pin__label { font-size: 0.72rem; }
+}
+@media (max-width: 600px) {
+  .map-pin__long { display: none; }
+  .map-pin--home .map-pin__label { left: -22px; top: 22px; }
+  .map-pin--left .map-pin__label { display: none; }
+}
+
 /* ---------- Feature band (FEMA Training style) ---------- */
 .band { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0; border: 1px solid var(--line); background: var(--paper); }
 .band__media { position: relative; min-height: 320px; background: var(--navy-900); }
