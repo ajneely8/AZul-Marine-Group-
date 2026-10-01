@@ -173,6 +173,8 @@ small { font-size: 0.875rem; }
   .primary-nav__contact { margin-top: 1.25rem; font-size: 0.95rem; line-height: 1.8; }
   .site-header__actions { position: relative; z-index: 1001; }
   body.nav-open { overflow: hidden; }
+  /* While the menu is open, lift the whole header (and the drawer inside it) above the dark backdrop */
+  body.nav-open .site-header { z-index: 1000; }
   .nav-backdrop { position: fixed; inset: 0; z-index: 950; background: rgba(7,26,51,.45); opacity: 0; visibility: hidden; transition: opacity .25s var(--ease); }
   body.nav-open .nav-backdrop { opacity: 1; visibility: visible; }
 }
