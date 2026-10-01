@@ -16,12 +16,13 @@
 window.AMG_MEDIA = {
   videos: [
     {
-      title: "Joint agency training on the Delta",
-      description: "Video to be provided by Azul Marine Group.",
-      date: "Date to be confirmed",
-      type: "",
-      src: "",
-      poster: ""
+      title: "Open Water Large Vessel Training",
+      description: "Pacific Coast Water Rescue trains with five agencies in a State Fire Training exercise hosted by the Woodbridge Fire Department.",
+      date: "State Fire Training",
+      event: "Video: Pacific Coast Water Rescue",
+      type: "file",
+      src: "assets/video/state-fire-training.mp4",
+      poster: "assets/video/state-fire-training-poster.jpg"
     },
     {
       title: "Swiftwater and small-boat rescue operations",
