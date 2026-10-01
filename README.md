@@ -1,6 +1,6 @@
 # Azul Marine Group website
 
-A complete, static, fully coded website for **Azul Marine Group** (The Azul Marine Group Inc.), a Discovery Bay, California 501(c)(3) nonprofit of marine professionals who support agencies during maritime emergencies, deliver marine training, and do stewardship work on the Sacramento, San Joaquin, and Mokelumne Rivers.
+A complete, static, fully coded website for **Azul Marine Group** (The Azul Marine Group Inc.), a California 501(c)(3) nonprofit serving Sacramento, the San Joaquin Delta, and the Bay Area, of marine professionals who support agencies during maritime emergencies, deliver marine training, and do stewardship work on the Sacramento, San Joaquin, and Mokelumne Rivers.
 
 No framework, no build dependencies on the server. Upload the folder and it works.
 
@@ -92,4 +92,4 @@ Also confirm before launch: that the organization is registered with the Califor
 
 ## Verified facts used on the site
 
-See `research/sources.md` for the full list with sources. In brief: the organization's name, legal name, EIN, 501(c)(3) public charity status and April 2026 ruling date, California entity number and type, Discovery Bay address, phone, email, Stockton registered address, mission text, member disciplines, and the waterways named in the mission all come from the organization's Facebook page, the IRS Business Master File, and the California Secretary of State record.
+See `research/sources.md` for the full list with sources. In brief: the organization's name, legal name, EIN, 501(c)(3) public charity status and April 2026 ruling date, California entity number and type, phone, email, Stockton registered address, mission text, member disciplines, and the waterways named in the mission all come from the organization's Facebook page, the IRS Business Master File, and the California Secretary of State record.
