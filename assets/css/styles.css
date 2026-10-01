@@ -337,6 +337,12 @@ small { font-size: 0.875rem; }
 .give-option p { color: var(--ink-700); margin: 0; }
 .give-option .btn { align-self: flex-start; margin-top: auto; }
 
+/* ---------- Article page ---------- */
+.article__hero img { aspect-ratio: 16 / 9; object-fit: cover; }
+.article p { font-size: 1.125rem; line-height: 1.7; }
+.article h2 { margin-top: 2.5rem; }
+.article h2:first-child { margin-top: 0; }
+
 /* ---------- Facts strip ---------- */
 .facts { background: var(--paper); border-bottom: 1px solid var(--line); }
 .facts__list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
