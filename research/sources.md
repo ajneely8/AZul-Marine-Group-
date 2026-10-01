@@ -79,3 +79,7 @@ Not used: the magazine's photographs (copyright of the publisher and photographe
 ## Photos supplied by Aiden (added 2026-09-30)
 
 Five photographs from the July 27, 2026 Sea Wolf transit, supplied by the client on behalf of the organization and saved in research/supplied/: Sea Wolf underway past the Port of Oakland cranes; the transit crew on the bow under the Antioch Bridge; the view from the helm during the fireboat send-off; three crew in the wheelhouse; a crew member on the bow. Captions do not name individuals.
+
+## Team photos (added 2026-09-30)
+
+Photos 01 to 08 in assets/img/team/ were supplied by Aiden from the organization's own pictures (originals in research/supplied/team/). Photo 09 (Paul Tate) is cropped from a phone screenshot of an image-search result credited to the Western Flyer Foundation; it is a third-party photo. Get permission from the Western Flyer Foundation or replace it with a photo supplied by Paul Tate before launch.
