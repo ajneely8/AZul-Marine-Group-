@@ -38,6 +38,7 @@ const site = {
   caEntity: '6441651',
   facebook: 'https://www.facebook.com/profile.php?id=61573883656021',
   gofundme: 'https://www.gofundme.com/f/support-seawolfs-return-to-protect-our-waters',
+  yachtsman: 'https://www.recreationpublications.com/PUB/BDYOct26/index.html',
   year: String(new Date().getFullYear()),
 };
 

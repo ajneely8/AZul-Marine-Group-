@@ -67,3 +67,11 @@ https://www.gofundme.com/f/support-seawolfs-return-to-protect-our-waters (link s
 - Not used: goal and amount raised (they change), and the campaign launch date (not shown on the page; ask the client).
 - Photos saved in `research/gofundme/` (5 of the campaign's 8 images were retrievable): Seawolf at dock, wheelhouse, fire pump work, dive team on the stern, diver alongside the hull. Published by the organization on its own campaign; used here on its behalf.
 - Eric Koster appears publicly as campaign organizer and is also the registered agent on the SOS record. His title in the organization is still unconfirmed, so he is not listed under Leadership.
+
+## Bay & Delta Yachtsman article (added 2026-09-30)
+
+"Sea Wolf's Second Watch," Bay & Delta Yachtsman, October 2026, pp. 34-37 (yachtsmanmagazine.com; digital edition hosted at recreationpublications.com). Screenshots supplied by Aiden.
+
+Facts used on the site: December 2017 Highway 12 / Tower Park bridge tragedy (three lives); John Garza, retired Fremont firefighter and marine captain; Pacific Coast Water Rescue (PCWR) trained and certified 150+ firefighters since 2017; connection with J&H Marine, Stockton; Sea Wolf is a 60-foot aluminum fireboat built 1994 for Oakland Fire Department after the 1989 Loma Prieta earthquake, up to 8,000 gpm through four monitors; Oakland City Council approved sale to AMG for $25,000 on May 5, 2026; purchase agreement signed July 2026; July 27, 2026 transit crew John Garza, Eric Koster, retired Oakland Fire Lt. Scott Hellige, Gregg Heim, Daniel Murphy Gengler; escorted by Oakland fireboat Bay Wolf and SF fireboat St. Francis; AMG formed as a California nonprofit in 2025 and granted 501(c)(3); role is to complement, not replace, public agencies.
+
+Not used: the magazine's photographs (copyright of the publisher and photographers). The sale price is in the research notes but not on the site.
